@@ -219,6 +219,18 @@
 		DD265FF51C32222900102DAD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD265FF41C32222900102DAD /* HomeViewController.m */; };
 		DD265FF81C32223200102DAD /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD265FF71C32223200102DAD /* FoodViewController.m */; };
 		DD265FFB1C32227500102DAD /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD265FFA1C32227500102DAD /* MyTabBarViewController.m */; };
+		DD63623E1C33AF02006213A4 /* ReadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD63623D1C33AF02006213A4 /* ReadModel.m */; };
+		DD6362421C33B328006213A4 /* ArticalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6362411C33B328006213A4 /* ArticalCell.m */; };
+		DD6362451C33CAC2006213A4 /* ArticalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6362441C33CAC2006213A4 /* ArticalDetailViewController.m */; };
+		DD6362471C33D543006213A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6362461C33D543006213A4 /* Security.framework */; };
+		DD6362491C33D556006213A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6362481C33D556006213A4 /* SystemConfiguration.framework */; };
+		DD63624B1C33D55F006213A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD63624A1C33D55F006213A4 /* CoreGraphics.framework */; };
+		DD63624D1C33D56B006213A4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD63624C1C33D56B006213A4 /* CoreTelephony.framework */; };
+		DD63624F1C33D579006213A4 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD63624E1C33D579006213A4 /* libstdc++.tbd */; };
+		DD6362511C33D588006213A4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6362501C33D588006213A4 /* libz.tbd */; };
+		DD98DD391C33696200ADA57F /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD98DD381C33696200ADA57F /* HomeDetailViewController.m */; };
+		DD98DD3E1C33818F00ADA57F /* ArticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD98DD3D1C33818F00ADA57F /* ArticalViewController.m */; };
+		DD98DD411C33819E00ADA57F /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD98DD401C33819E00ADA57F /* RecordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -584,6 +596,24 @@
 		DD265FFA1C32227500102DAD /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
 		DD265FFD1C32234600102DAD /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		DD265FFE1C32294D00102DAD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DD63623C1C33AF02006213A4 /* ReadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadModel.h; sourceTree = "<group>"; };
+		DD63623D1C33AF02006213A4 /* ReadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadModel.m; sourceTree = "<group>"; };
+		DD6362401C33B328006213A4 /* ArticalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalCell.h; sourceTree = "<group>"; };
+		DD6362411C33B328006213A4 /* ArticalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticalCell.m; sourceTree = "<group>"; };
+		DD6362431C33CAC2006213A4 /* ArticalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalDetailViewController.h; sourceTree = "<group>"; };
+		DD6362441C33CAC2006213A4 /* ArticalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticalDetailViewController.m; sourceTree = "<group>"; };
+		DD6362461C33D543006213A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DD6362481C33D556006213A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DD63624A1C33D55F006213A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD63624C1C33D56B006213A4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DD63624E1C33D579006213A4 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		DD6362501C33D588006213A4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DD98DD371C33696200ADA57F /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		DD98DD381C33696200ADA57F /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		DD98DD3C1C33818F00ADA57F /* ArticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticalViewController.h; sourceTree = "<group>"; };
+		DD98DD3D1C33818F00ADA57F /* ArticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticalViewController.m; sourceTree = "<group>"; };
+		DD98DD3F1C33819E00ADA57F /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		DD98DD401C33819E00ADA57F /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,6 +621,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6362511C33D588006213A4 /* libz.tbd in Frameworks */,
+				DD63624F1C33D579006213A4 /* libstdc++.tbd in Frameworks */,
+				DD63624D1C33D56B006213A4 /* CoreTelephony.framework in Frameworks */,
+				DD63624B1C33D55F006213A4 /* CoreGraphics.framework in Frameworks */,
+				DD6362491C33D556006213A4 /* SystemConfiguration.framework in Frameworks */,
+				DD6362471C33D543006213A4 /* Security.framework in Frameworks */,
 				DD265FDC1C321ADD00102DAD /* libiconv.tbd in Frameworks */,
 				DD265FDA1C321AD400102DAD /* QuartzCore.framework in Frameworks */,
 				DD265FD81C321ACB00102DAD /* CoreVideo.framework in Frameworks */,
@@ -1365,6 +1401,12 @@
 		DD265FDD1C3220E800102DAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD6362501C33D588006213A4 /* libz.tbd */,
+				DD63624E1C33D579006213A4 /* libstdc++.tbd */,
+				DD63624C1C33D56B006213A4 /* CoreTelephony.framework */,
+				DD63624A1C33D55F006213A4 /* CoreGraphics.framework */,
+				DD6362481C33D556006213A4 /* SystemConfiguration.framework */,
+				DD6362461C33D543006213A4 /* Security.framework */,
 				DD265FDB1C321ADD00102DAD /* libiconv.tbd */,
 				DD265FD91C321AD400102DAD /* QuartzCore.framework */,
 				DD265FD71C321ACB00102DAD /* CoreVideo.framework */,
@@ -1378,6 +1420,7 @@
 		DD265FDE1C32213200102DAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD63623B1C33AEEE006213A4 /* ReadModel */,
 				DD0E72E81C3272B50037A152 /* HomeModel */,
 			);
 			path = Models;
@@ -1399,6 +1442,7 @@
 		DD265FE01C32214000102DAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD63623F1C33B303006213A4 /* ReadCell */,
 				DD0E72EC1C3278D00037A152 /* HomeCell */,
 				DD0E72E21C32356A0037A152 /* GuidePageVIew.h */,
 				DD0E72E31C32356A0037A152 /* GuidePageVIew.m */,
@@ -1433,6 +1477,8 @@
 			children = (
 				DD265FF31C32222900102DAD /* HomeViewController.h */,
 				DD265FF41C32222900102DAD /* HomeViewController.m */,
+				DD98DD371C33696200ADA57F /* HomeDetailViewController.h */,
+				DD98DD381C33696200ADA57F /* HomeDetailViewController.m */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -1458,10 +1504,50 @@
 		DD265FE61C3221C500102DAD /* ReadVC */ = {
 			isa = PBXGroup;
 			children = (
+				DD98DD3B1C33816800ADA57F /* ArticalVC */,
+				DD98DD3A1C33816200ADA57F /* RecordVC */,
 				DD265FEA1C32221000102DAD /* ReadViewController.h */,
 				DD265FEB1C32221000102DAD /* ReadViewController.m */,
 			);
 			path = ReadVC;
+			sourceTree = "<group>";
+		};
+		DD63623B1C33AEEE006213A4 /* ReadModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD63623C1C33AF02006213A4 /* ReadModel.h */,
+				DD63623D1C33AF02006213A4 /* ReadModel.m */,
+			);
+			path = ReadModel;
+			sourceTree = "<group>";
+		};
+		DD63623F1C33B303006213A4 /* ReadCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD6362401C33B328006213A4 /* ArticalCell.h */,
+				DD6362411C33B328006213A4 /* ArticalCell.m */,
+			);
+			path = ReadCell;
+			sourceTree = "<group>";
+		};
+		DD98DD3A1C33816200ADA57F /* RecordVC */ = {
+			isa = PBXGroup;
+			children = (
+				DD98DD3F1C33819E00ADA57F /* RecordViewController.h */,
+				DD98DD401C33819E00ADA57F /* RecordViewController.m */,
+			);
+			path = RecordVC;
+			sourceTree = "<group>";
+		};
+		DD98DD3B1C33816800ADA57F /* ArticalVC */ = {
+			isa = PBXGroup;
+			children = (
+				DD98DD3C1C33818F00ADA57F /* ArticalViewController.h */,
+				DD98DD3D1C33818F00ADA57F /* ArticalViewController.m */,
+				DD6362431C33CAC2006213A4 /* ArticalDetailViewController.h */,
+				DD6362441C33CAC2006213A4 /* ArticalDetailViewController.m */,
+			);
+			path = ArticalVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1709,6 +1795,7 @@
 				DD265FEC1C32221000102DAD /* ReadViewController.m in Sources */,
 				DD265F751C3219E700102DAD /* FMDatabase.m in Sources */,
 				DD265F711C3219E700102DAD /* MMDrawerController.m in Sources */,
+				DD98DD3E1C33818F00ADA57F /* ArticalViewController.m in Sources */,
 				DD265F8B1C3219E700102DAD /* UIScrollView+MJExtension.m in Sources */,
 				DD265D8C1C3219C400102DAD /* AppDelegate.m in Sources */,
 				DD265F821C3219E700102DAD /* MJRefreshAutoStateFooter.m in Sources */,
@@ -1716,6 +1803,7 @@
 				DD265F771C3219E700102DAD /* FMDatabasePool.m in Sources */,
 				DD265FBA1C3219E700102DAD /* qrencode.c in Sources */,
 				DD265F851C3219E700102DAD /* MJRefreshBackStateFooter.m in Sources */,
+				DD98DD391C33696200ADA57F /* HomeDetailViewController.m in Sources */,
 				DD265F971C3219E700102DAD /* UIButton+WebCache.m in Sources */,
 				DD265F7B1C3219E700102DAD /* MJRefreshAutoFooter.m in Sources */,
 				DD265FBE1C3219E700102DAD /* split.c in Sources */,
@@ -1739,10 +1827,13 @@
 				DD0E72EF1C3278EB0037A152 /* HomeCell.m in Sources */,
 				DD265FFB1C32227500102DAD /* MyTabBarViewController.m in Sources */,
 				DD265F961C3219E700102DAD /* SDWebImagePrefetcher.m in Sources */,
+				DD63623E1C33AF02006213A4 /* ReadModel.m in Sources */,
+				DD6362451C33CAC2006213A4 /* ArticalDetailViewController.m in Sources */,
 				DD265F9B1C3219E700102DAD /* UIImageView+HighlightedWebCache.m in Sources */,
 				DD265F6D1C3219E700102DAD /* AFURLResponseSerialization.m in Sources */,
 				DD265F831C3219E700102DAD /* MJRefreshBackGifFooter.m in Sources */,
 				DD265FB71C3219E700102DAD /* bitstream.c in Sources */,
+				DD98DD411C33819E00ADA57F /* RecordViewController.m in Sources */,
 				DD265F9C1C3219E700102DAD /* UIImageView+WebCache.m in Sources */,
 				DD265F871C3219E700102DAD /* MJRefreshNormalHeader.m in Sources */,
 				DD265F7E1C3219E700102DAD /* MJRefreshFooter.m in Sources */,
@@ -1780,6 +1871,7 @@
 				DD265D951C3219C400102DAD /* LoveLife.xcdatamodeld in Sources */,
 				DD0E72E71C32601B0037A152 /* LeftViewController.m in Sources */,
 				DD265FBB1C3219E700102DAD /* qrinput.c in Sources */,
+				DD6362421C33B328006213A4 /* ArticalCell.m in Sources */,
 				DD265F7D1C3219E700102DAD /* MJRefreshComponent.m in Sources */,
 				DD265FEF1C32221800102DAD /* MyViewController.m in Sources */,
 				DD265F781C3219E700102DAD /* FMDatabaseQueue.m in Sources */,
@@ -1934,6 +2026,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveLife/ThirdLibrary/UMShare/TencentOpenAPI",
@@ -1960,6 +2053,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveLife/ThirdLibrary/UMShare/TencentOpenAPI",

@@ -21,7 +21,8 @@
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H ([UIScreen mainScreen].bounds.size.height - 64)
 #define RGB(r,g,b,a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a)]
-
+//友盟分享
+#define APPKEY @"566cf4ebe0f55a23e5007be9"
 
 //接口
 //数据接口

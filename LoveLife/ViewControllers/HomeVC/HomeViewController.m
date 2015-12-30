@@ -16,6 +16,7 @@
 
 #import "HomeModel.h"
 #import "HomeCell.h"
+#import "HomeDetailViewController.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -152,7 +153,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    HomeDetailViewController * vc = [[HomeDetailViewController alloc]init];
+    //传值
+    HomeModel * model = self.dataArray[indexPath.row];
+    vc.dataID = model.dataID;
     
+    //隐藏tabBar
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 设置导航
