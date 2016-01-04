@@ -48,6 +48,7 @@
     _timeLabel.text = model.createtime;
 }
 
+
 - (void)awakeFromNib {
     // Initialization code
 }

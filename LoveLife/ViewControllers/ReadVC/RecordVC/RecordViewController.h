@@ -10,4 +10,6 @@
 
 @interface RecordViewController : UIViewController
 
+@property(nonatomic,strong) UITableView * tableView;
+
 @end

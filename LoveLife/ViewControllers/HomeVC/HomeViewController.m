@@ -115,7 +115,7 @@
     //方法一
     //_tableView.separatorColor = [UIColor clearColor];
     //方法二
-    //_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     //去掉多余的线条
     //_tableView.tableFooterView = [[UIView alloc]init];
     

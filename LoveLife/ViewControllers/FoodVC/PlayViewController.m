@@ -1,22 +1,32 @@
 //
-//  MyViewController.m
+//  PlayViewController.m
 //  LoveLife
 //
-//  Created by 杨阳 on 15/12/29.
+//  Created by 杨阳 on 15/12/31.
 //  Copyright © 2015年 yangyang. All rights reserved.
 //
 
-#import "MyViewController.h"
+#import "PlayViewController.h"
 
-@interface MyViewController ()
+@interface PlayViewController ()
 
 @end
 
-@implementation MyViewController
+@implementation PlayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
+}
+
+-(BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape;
 }
 
 - (void)didReceiveMemoryWarning {
