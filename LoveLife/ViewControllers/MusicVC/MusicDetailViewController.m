@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 #import "MusicModel.h"
 #import "MisicListCell.h"
-
+#import "PlayMusicViewController.h"
 @interface MusicDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView * _tableView;
@@ -20,6 +20,7 @@
 //数据源
 @property(nonatomic,strong) NSMutableArray * dataArray;
 @property(nonatomic,strong) MBProgressHUD * hud;
+@property (nonatomic,strong) NSMutableArray * urlArray;
 
 @end
 
@@ -29,6 +30,7 @@
     [super viewDidLoad];
     _page = 0;
     self.dataArray = [NSMutableArray arrayWithCapacity:0];
+    self.urlArray = [[NSMutableArray alloc] init];
     //刚进入页面显示的数据
     [self loadData];
     [self settingNav];
@@ -57,6 +59,10 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
     [manager GET:self.urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         for (NSDictionary * dic in responseObject[@"data"]) {
+            
+            //MP3
+            [self.urlArray addObject:dic[@"url"]];
+            
             MusicModel * model = [[MusicModel alloc]init];
             [model setValuesForKeysWithDictionary:dic];
             [self.dataArray addObject:model];
@@ -124,7 +130,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    PlayMusicViewController * play = [[PlayMusicViewController alloc] init];
+    MusicModel * model = self.dataArray[indexPath.row];
     
+    play.model = model;
+    play.currentIndex = (int)indexPath.row;
+    play.urlArray = self.urlArray;
+    play.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:play animated:YES];
 }
 
 #pragma mark - 设置导航

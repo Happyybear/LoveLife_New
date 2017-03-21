@@ -13,7 +13,7 @@
 #import "CustomViewController.h"
 //广告轮播
 #import "Carousel.h"
-
+#import "AppDelegate.h"
 #import "HomeModel.h"
 #import "HomeCell.h"
 #import "HomeDetailViewController.h"
@@ -33,12 +33,25 @@
 
 @implementation HomeViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self settingNav];
     [self createTableHeaderView];
     [self createTableView];
     [self createRefresh];
+    
+    
+}
+
+-(void)refresh
+{
+    
+    [_tableView.header beginRefreshing];
+//    [self.view removeFromSuperview];
+    NSLog(@"dadwd");
 }
 #pragma mark - 刷新数据
 -(void)createRefresh
@@ -179,6 +192,7 @@
 -(void)leftButtonClick
 {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    
 }
 
 -(void)rightButtonClick

@@ -7,7 +7,8 @@
 //
 
 #import "ArticalDetailViewController.h"
-
+#import "DBManager.h"
+#import "AppDelegate.h"
 @interface ArticalDetailViewController ()
 
 @end
@@ -20,6 +21,34 @@
     [self createUI];
 }
 
+
+- (void)viewWillDisappear:(BOOL)animated
+
+{
+    
+    [super viewWillDisappear:animated];
+    AppDelegate * delegate = [UIApplication sharedApplication].delegate;
+    [delegate.drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    
+    [delegate.drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    DBManager * manager = [DBManager defaultManager];
+    if ([manager isHasDataIDFromTable:self.readModel.dataID]) {
+        UIButton * collect = [self.view viewWithTag:10];
+        collect.selected = YES;
+    }
+}
 #pragma mark - 创建UI
 -(void)createUI
 {
@@ -31,7 +60,36 @@
     [self.view addSubview:webView];
     
     //webView与javaSript的交互
+    
+    UIButton *collecButton = [FactoryUI createButtonWithFrame:CGRectMake(SCREEN_W - 50, 50, 40, 40) title:nil titleColor:nil imageName:@"iconfont-iconfontshoucang.png" backgroundImageName:nil target:self selector:@selector(collect:)];
+    [self.view addSubview:collecButton];
+    collecButton.tag = 10;
+    [collecButton setImage:[UIImage imageNamed:@"iconfont-iconfontshoucang-2"] forState:UIControlStateSelected];
 }
+
+
+-(void)collect:(UIButton *)button{
+    button.selected = YES;
+    DBManager *manager = [DBManager defaultManager];
+    if ([manager isHasDataIDFromTable:self.readModel.dataID]) {
+        //说明已收藏
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"已经收藏" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        [alert show];
+        
+        //ios9之后的提示框
+//        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"请不要重复收藏" preferredStyle:UIAlertControllerStyleAlert];
+//        
+//        UIAlertAction *alert1 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+//        [alert addAction:alert1];
+//        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else
+    {
+        //未曾收藏,则插入一条数据
+        [manager insertDataModel:self.readModel];
+    }
+}
+
 
 #pragma mark - 设置导航
 -(void)settingNav

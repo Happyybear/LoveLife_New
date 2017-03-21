@@ -34,14 +34,14 @@
     self.myTabBar = [[MyTabBarViewController alloc]init];
     LeftViewController * leftVC = [[LeftViewController alloc]init];
     
-    MMDrawerController * drawerVC = [[MMDrawerController alloc]initWithCenterViewController:self.myTabBar leftDrawerViewController:leftVC];
+    _drawerVC = [[MMDrawerController alloc]initWithCenterViewController:self.myTabBar leftDrawerViewController:leftVC];
     //设置抽屉打开和关闭的模式
-    drawerVC.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
-    drawerVC.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    _drawerVC.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    _drawerVC.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
     //设置左页面打开之后的宽度
-    drawerVC.maximumLeftDrawerWidth = SCREEN_W - 100;
+    _drawerVC.maximumLeftDrawerWidth = SCREEN_W - 100;
     
-    self.window.rootViewController = drawerVC;
+    self.window.rootViewController = _drawerVC;
     
     //修改状态栏的颜色（第二种方式）
     [UIApplication sharedApplication].statusBarStyle =  UIStatusBarStyleLightContent;
@@ -113,6 +113,12 @@
     [self saveContext];
 }
 
+
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    application.applicationIconBadgeNumber = 0;
+}
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;

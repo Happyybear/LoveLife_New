@@ -10,7 +10,7 @@
 #import "ReadModel.h"
 #import "ArticalCell.h"
 #import "ArticalDetailViewController.h"
-
+#import "AppDelegate.h"
 @interface ArticalViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView * _tableView;
@@ -29,6 +29,15 @@
     [self createTableView];
     [self createRefresh];
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate * delegate = [UIApplication sharedApplication].delegate;
+    [delegate.drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    
+    [delegate.drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+}
+
 
 #pragma mark - 请求数据
 -(void)createRefresh

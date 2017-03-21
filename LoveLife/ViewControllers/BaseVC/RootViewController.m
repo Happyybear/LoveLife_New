@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-
+#import "AppDelegate.h"
 @interface RootViewController ()
 
 @end
@@ -21,6 +21,10 @@
     [self createRootNav];
     
 }
+
+
+
+
 
 -(void)createRootNav
 {

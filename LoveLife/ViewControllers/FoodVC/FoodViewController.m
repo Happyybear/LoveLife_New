@@ -13,7 +13,7 @@
 #import "FoodModel.h"
 #import "PlayViewController.h"
 #import "FoodDetailViewController.h"
-
+#import "AppDelegate.h"
 //视频播放
 #import <MediaPlayer/MediaPlayer.h>
 //iOS9下的视频播放
@@ -51,6 +51,8 @@
         }
     }
 }
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

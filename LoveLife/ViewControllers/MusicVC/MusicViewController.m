@@ -10,7 +10,7 @@
 #import "MusicCollectionViewCell.h"
 #import "MusicCollectionReusableView.h"
 #import "MusicDetailViewController.h"
-
+#import "AppDelegate.h"
 @interface MusicViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 {
     UICollectionView * _collectionView;
@@ -24,6 +24,15 @@
 @end
 
 @implementation MusicViewController
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate * delegate = [UIApplication sharedApplication].delegate;
+    [delegate.drawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    
+    [delegate.drawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

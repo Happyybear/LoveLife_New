@@ -26,6 +26,7 @@
     [self createUI];
 }
 
+
 -(void)setingNav
 {
     //创建segment

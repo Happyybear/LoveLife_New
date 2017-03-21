@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MyTabBarViewController : UITabBarController
-
+@property (nonatomic,strong) UIViewController *homenVc;
+@property (nonatomic,strong) UIViewController *naVC;
 @end

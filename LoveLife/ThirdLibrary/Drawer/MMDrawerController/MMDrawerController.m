@@ -1454,7 +1454,8 @@ static inline CGFloat originXForDrawerOriginAndTargetOriginOffset(CGFloat origin
 }
 
 -(BOOL)isPointContainedWithinCenterViewContentRect:(CGPoint)point{
-    CGRect centerViewContentRect = self.centerContainerView.frame;
+//    CGRect centerViewContentRect = self.centerContainerView.frame;
+    CGRect centerViewContentRect = CGRectMake(0, 0, 50, self.centerContainerView.frame.size.height);
     centerViewContentRect = CGRectIntersection(centerViewContentRect,self.childControllerContainerView.bounds);
     return (CGRectContainsPoint(centerViewContentRect, point) &&
             [self isPointContainedWithinNavigationRect:point] == NO);

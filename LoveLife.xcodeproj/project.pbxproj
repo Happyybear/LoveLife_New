@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2C71DD1C3CF108005C75A9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C71DC1C3CF108005C75A9 /* LoginViewController.m */; };
+		3CE404481C3B556500BFB188 /* PlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE404471C3B556500BFB188 /* PlayMusicViewController.m */; };
+		3CE4044B1C3BC32700BFB188 /* GuanYuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4044A1C3BC32700BFB188 /* GuanYuViewController.m */; };
+		3CF20BFB1C3CA20C00034500 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF20BFA1C3CA20C00034500 /* DBManager.m */; };
+		3CF20BFE1C3CA68700034500 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF20BFD1C3CA68700034500 /* MyCollectionViewController.m */; };
 		DD0E72E41C32356A0037A152 /* GuidePageVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E72E31C32356A0037A152 /* GuidePageVIew.m */; };
 		DD0E72E71C32601B0037A152 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E72E61C32601B0037A152 /* LeftViewController.m */; };
 		DD0E72EB1C3276D70037A152 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E72EA1C3276D70037A152 /* HomeModel.m */; };
@@ -266,6 +271,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2C71DB1C3CF108005C75A9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3C2C71DC1C3CF108005C75A9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3CE404461C3B556500BFB188 /* PlayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayMusicViewController.h; sourceTree = "<group>"; };
+		3CE404471C3B556500BFB188 /* PlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayMusicViewController.m; sourceTree = "<group>"; };
+		3CE404491C3BC32700BFB188 /* GuanYuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuanYuViewController.h; sourceTree = "<group>"; };
+		3CE4044A1C3BC32700BFB188 /* GuanYuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuanYuViewController.m; sourceTree = "<group>"; };
+		3CF20BF91C3CA20C00034500 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		3CF20BFA1C3CA20C00034500 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		3CF20BFC1C3CA68700034500 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
+		3CF20BFD1C3CA68700034500 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
 		DD0E72E21C32356A0037A152 /* GuidePageVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidePageVIew.h; sourceTree = "<group>"; };
 		DD0E72E31C32356A0037A152 /* GuidePageVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidePageVIew.m; sourceTree = "<group>"; };
 		DD0E72E51C32601B0037A152 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
@@ -956,6 +971,8 @@
 		DD265E671C3219E700102DAD /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				3CF20BF91C3CA20C00034500 /* DBManager.h */,
+				3CF20BFA1C3CA20C00034500 /* DBManager.m */,
 				DD265E681C3219E700102DAD /* AFNetworking */,
 				DD265E7C1C3219E700102DAD /* Drawer */,
 				DD265E891C3219E700102DAD /* FactoryUI */,
@@ -1543,6 +1560,8 @@
 				DD265FF11C32222000102DAD /* MusicViewController.m */,
 				DDAF1CD71C3A513B0023216E /* MusicDetailViewController.h */,
 				DDAF1CD81C3A513B0023216E /* MusicDetailViewController.m */,
+				3CE404461C3B556500BFB188 /* PlayMusicViewController.h */,
+				3CE404471C3B556500BFB188 /* PlayMusicViewController.m */,
 			);
 			path = MusicVC;
 			sourceTree = "<group>";
@@ -1552,6 +1571,12 @@
 			children = (
 				DD265FED1C32221800102DAD /* MyViewController.h */,
 				DD265FEE1C32221800102DAD /* MyViewController.m */,
+				3CE404491C3BC32700BFB188 /* GuanYuViewController.h */,
+				3CE4044A1C3BC32700BFB188 /* GuanYuViewController.m */,
+				3CF20BFC1C3CA68700034500 /* MyCollectionViewController.h */,
+				3CF20BFD1C3CA68700034500 /* MyCollectionViewController.m */,
+				3C2C71DB1C3CF108005C75A9 /* LoginViewController.h */,
+				3C2C71DC1C3CF108005C75A9 /* LoginViewController.m */,
 			);
 			path = MyVC;
 			sourceTree = "<group>";
@@ -1725,6 +1750,7 @@
 				TargetAttributes = {
 					DD265D831C3219C400102DAD = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9TA8PUM248;
 					};
 					DD265D9F1C3219C400102DAD = {
 						CreatedOnToolsVersion = 7.1;
@@ -1899,8 +1925,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD265F661C3219E700102DAD /* AFHTTPRequestOperation.m in Sources */,
+				3CE4044B1C3BC32700BFB188 /* GuanYuViewController.m in Sources */,
 				DD265F881C3219E700102DAD /* MJRefreshStateHeader.m in Sources */,
 				DD265FEC1C32221000102DAD /* ReadViewController.m in Sources */,
+				3CF20BFB1C3CA20C00034500 /* DBManager.m in Sources */,
+				3C2C71DD1C3CF108005C75A9 /* LoginViewController.m in Sources */,
 				DD265F751C3219E700102DAD /* FMDatabase.m in Sources */,
 				DD265F711C3219E700102DAD /* MMDrawerController.m in Sources */,
 				DD98DD3E1C33818F00ADA57F /* ArticalViewController.m in Sources */,
@@ -1908,6 +1937,7 @@
 				DD265D8C1C3219C400102DAD /* AppDelegate.m in Sources */,
 				DD265F821C3219E700102DAD /* MJRefreshAutoStateFooter.m in Sources */,
 				DD265FF21C32222000102DAD /* MusicViewController.m in Sources */,
+				3CE404481C3B556500BFB188 /* PlayMusicViewController.m in Sources */,
 				DD265F771C3219E700102DAD /* FMDatabasePool.m in Sources */,
 				DD265FBA1C3219E700102DAD /* qrencode.c in Sources */,
 				DD265F851C3219E700102DAD /* MJRefreshBackStateFooter.m in Sources */,
@@ -1951,6 +1981,7 @@
 				DD553CE91C39641100ABFA80 /* RecordModel.m in Sources */,
 				DD265F9C1C3219E700102DAD /* UIImageView+WebCache.m in Sources */,
 				DD553CEC1C3964B300ABFA80 /* RecordCell.m in Sources */,
+				3CF20BFE1C3CA68700034500 /* MyCollectionViewController.m in Sources */,
 				DD265F871C3219E700102DAD /* MJRefreshNormalHeader.m in Sources */,
 				DD265F7E1C3219E700102DAD /* MJRefreshFooter.m in Sources */,
 				DD265FE91C3221FA00102DAD /* RootViewController.m in Sources */,
@@ -2149,6 +2180,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2167,7 +2199,7 @@
 					"$(PROJECT_DIR)/LoveLife/ThirdLibrary/UMShare/YiXin",
 					"$(PROJECT_DIR)/LoveLife/ThirdLibrary/ZBarSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yy.LoveLife;
+				PRODUCT_BUNDLE_IDENTIFIER = king.LoveLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2176,6 +2208,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2194,7 +2227,7 @@
 					"$(PROJECT_DIR)/LoveLife/ThirdLibrary/UMShare/YiXin",
 					"$(PROJECT_DIR)/LoveLife/ThirdLibrary/ZBarSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yy.LoveLife;
+				PRODUCT_BUNDLE_IDENTIFIER = king.LoveLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

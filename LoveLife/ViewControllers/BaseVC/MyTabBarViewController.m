@@ -24,6 +24,10 @@
     [self createViewControllers];
     [self createTabBarItem];
 }
+-(void)selectWithController:(NSInteger)num
+{
+    self.selectedIndex = num;
+}
 
 -(void)createViewControllers
 {
@@ -31,7 +35,7 @@
     //首页
     HomeViewController * homeVC = [[HomeViewController alloc]init];
     UINavigationController * homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
-    
+    self.homenVc = homeVC;
     //阅读
     ReadViewController * readVC = [[ReadViewController alloc]init];
     UINavigationController * readNav = [[UINavigationController alloc]initWithRootViewController:readVC];
